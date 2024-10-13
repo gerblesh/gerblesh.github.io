@@ -17,8 +17,9 @@ Taken from the Website:
 
 This project originally started in Universal Blue as an image template but eventually split off to become a seperate entity to manage the growing complexity of image creation. I have contributed a lot to make the final iteration of startingpoint the way it is today, creating the systemd module, files module, signing module, and helping fix bugs that crop up. I use this project in order to build the operating system I use on my personal machines.
 
-# [Froggo Mode](https://gerblesh.itch.io/froggo-mode)
-Play as a cyborg frog that can change modes in order to get through difficult and puzzling challenges. Froggo Mode was originally created for the BigMode gamejam but is currently being developed for a full release available on steam.
+[![Froggo Mode](https://img.itch.zone/aW1nLzE0MzU3OTc2LnBuZw==/original/THULbx.png)](https://gerblesh.itch.io/froggo-mode)
+Play as a cyborg frog that can change modes in order to get through difficult and puzzling challenges. Froggo Mode was originally created for the BigMode gamejam but is currently being developed for a full release which will be available on Steam. I worked with TenSeven to make this game possible and it was hard to crunch out the game in time for the end of the jam due to our busy weeks.
+![Froggo Mode Gameplay](https://img.itch.zone/aW1hZ2UvMjQyNTc3MS8xNDM1NzkzNi5naWY=/original/2pl0Tf.gif)
 
 # [Energy Exodus](https://gerblesh.itch.io/energy-exodus)
 Made for the 1-bit jam with friends from school collaborating on code, art, and music, Energy Exodus is an exciting 2D platformer requiring precise movement and timing to beat. Play as a tiny robot in search of an escape, and hide from the enemies that get in your way!
