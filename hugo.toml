@@ -1,5 +1,5 @@
 baseurl = "http://www.example.com"
-title = "johndoe"
+title = "Gerblesh"
 theme = "hugo-coder"
 languagecode = "en"
 defaultcontentlanguage = "en"
@@ -8,15 +8,15 @@ paginate = 20
 
 [services]
 [services.disqus]
-disqusShortname = "yourdiscussshortname"
+disqusShortname = "Gerblesh"
 
 [markup.highlight]
 style = "github-dark"
 
 [params]
-author = "John Doe"
-info = "Full Stack DevOps and Magician"
-description = "John Doe's personal website"
+author = "Gareth Widlansky (Gerblesh)"
+info = "Game Developer, Student, and OSS Contributor"
+description = "Gareth Widlansky's Personal Website"
 keywords = "blog,developer,personal"
 avatarurl = "images/avatar.jpg"
 #gravatar = "john.doe@example.com"
@@ -25,7 +25,7 @@ faviconSVG = "/img/favicon.svg"
 favicon_32 = "/img/favicon-32x32.png"
 favicon_16 = "/img/favicon-16x16.png"
 
-since = 2019
+since = 2024
 
 enableTwemoji = true
 
@@ -46,28 +46,27 @@ author = "authors"
 [[params.social]]
 name = "Github"
 icon = "fa-brands fa-github fa-2x"
-weight = 1
-url = "https://github.com/johndoe/"
-[[params.social]]
-name = "Gitlab"
-icon = "fa-brands fa-gitlab fa-2x"
 weight = 2
-url = "https://gitlab.com/johndoe/"
+url = "https://github.com/gerblesh/"
 [[params.social]]
-name = "Twitter"
-icon = "fa-brands fa-x-twitter fa-2x"
-weight = 3
-url = "https://twitter.com/johndoe/"
-
+name = "Github"
+icon = "fa-brands fa-github fa-2x"
+weight = 2
+url = "https://github.com/gar354/"
+[[params.social]]
+name = "Github"
+icon = "fa-brands fa-itch-io fa-2x"
+weight = 2
+url = "https://gerblesh.itch.io"
 # Menu links
-[[menu.main]]
-name = "Blog"
-weight = 1
-url = "posts/"
 [[menu.main]]
 name = "About"
 weight = 2
 url = "about/"
+[[menu.main]]
+name = "Projects"
+weight = 3
+url = "projects/"
 
 [module]
 [[module.imports]]

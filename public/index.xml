@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gerblesh</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Gerblesh</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Projects:</title>
+      <link>http://localhost:1313/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://universal-blue.org&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img src=&#34;http://localhost:1313/ublue-logo.svg&#34; alt=&#34;ublue-logo&#34;&gt;&lt;/a&gt;&#xA;Taken from the Website:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;The Universal Blue project builds a diverse set of continuously delivered operating system images using Fedora Atomic Desktop&amp;rsquo;s support for bootable OCI containers. That&amp;rsquo;s nerdspeak for the ultimate Linux client: the reliability of a Chromebook, but with the flexibility and power of a traditional Linux desktop.&#xA;These images represent what&amp;rsquo;s possible when a community focuses on sharing best practices via automation and collaboration. One common language between dev and ops, and it&amp;rsquo;s finally come to the desktop.&#xA;We also provide tools for users to build their own image using our templates and processes, which can be used to ship custom configurations to all of your machines, or finally make the Linux distribution you&amp;rsquo;ve long wished for, but never had the tools to create.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
