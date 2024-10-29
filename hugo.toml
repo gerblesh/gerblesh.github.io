@@ -1,36 +1,39 @@
 baseurl = "http://www.example.com"
-title = "Gerblesh"
+title = "Gareth Widlansky"
 theme = "hugo-coder"
 languagecode = "en"
 defaultcontentlanguage = "en"
 
-paginate = 20
+pagination.pagerSize = 20
 
-[services]
-[services.disqus]
-disqusShortname = "Gerblesh"
-
+# [services]
+# [services.disqus]
+# disqusShortname = "Gareth"
 [markup.highlight]
 style = "github-dark"
 
+[markup.goldmark.renderer]
+unsafe = true
+
+
 [params]
-author = "Gareth Widlansky (Gerblesh)"
+author = "Gareth Widlansky"
 info = "Game Developer, Student, and OSS Contributor"
 description = "Gareth Widlansky's Personal Website"
 keywords = "blog,developer,personal"
-avatarurl = "images/avatar.jpg"
+avatarurl = "avatar.webp"
 #gravatar = "john.doe@example.com"
 
-faviconSVG = "/img/favicon.svg"
-favicon_32 = "/img/favicon-32x32.png"
-favicon_16 = "/img/favicon-16x16.png"
+faviconSVG = "avatar.webp"
+favicon_32 = "avatar.webp"
+favicon_16 = "avatar.webp"
 
 since = 2024
 
 enableTwemoji = true
 
-colorScheme = "auto"
-hidecolorschemetoggle = false
+colorScheme = "dark"
+hidecolorschemetoggle = true
 
 # customCSS = ["css/custom.css"]
 # customSCSS = ["scss/custom.scss"]
@@ -67,6 +70,10 @@ url = "about/"
 name = "Projects"
 weight = 3
 url = "projects/"
+[[menu.main]]
+name = "Piano"
+weight = 4
+url = "piano/"
 
 [module]
 [[module.imports]]
