@@ -56,12 +56,12 @@ A simple webapp that allows students of the Bush School to sign in and out of ca
 
 ---
 
-# [Shart2D](https://github.com/vincens2005/shart2d)
-The name being a joking twist on the 2D physics engine "Box2D," shart2D was made in my free time with a friend as a way to experiment with C and raylib as well as getting to grips learning some basic physics and kinematics concepts. Rotational motion, friction, and rigid body collision all work well, only supports convex poligonal shapes (triangles, squares, hexagons, etc)
+# [physics2D](https://github.com/vincens2005/physics2d)
+physics2D was made in my free time with a friend as a way to experiment with C and raylib as well as getting to grips learning some basic physics and kinematics concepts. Rotational motion, friction, and rigid body collision all work well, only supports convex poligonal shapes (triangles, squares, hexagons, etc)
 
 ---
 
-# [ShartVK](https://github.com/gerblesh/shartvk)
+# [VkTest](https://github.com/gerblesh/vktest)
 Experiment to learn graphics APIs and low level platform libraries such as SDL. This project was quite grueling due to the sheer amount of verbosity vulkan requires, it took about 4-5 days until I saw any visible results (triangle). Things got easier once I had the foundation in place but it was certainly a learning experience in memory management, shaders, 3D projection, reading files in C, as well as vulkan itself.
 
 ---
