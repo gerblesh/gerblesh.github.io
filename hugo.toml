@@ -63,10 +63,6 @@ weight = 2
 url = "https://gerblesh.itch.io"
 # Menu links
 [[menu.main]]
-name = "About"
-weight = 2
-url = "about/"
-[[menu.main]]
 name = "Projects"
 weight = 3
 url = "projects/"
