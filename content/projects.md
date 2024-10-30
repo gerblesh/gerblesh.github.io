@@ -56,7 +56,7 @@ A simple webapp that allows students of the Bush School to sign in and out of ca
 
 ---
 
-# [physics2D](https://github.com/vincens2005/physics2d)
+# [physics2D](https://github.com/vincens2005/epic2dphysics)
 physics2D was made in my free time with a friend as a way to experiment with C and raylib as well as getting to grips learning some basic physics and kinematics concepts. Rotational motion, friction, and rigid body collision all work well, only supports convex poligonal shapes (triangles, squares, hexagons, etc)
 
 ---
