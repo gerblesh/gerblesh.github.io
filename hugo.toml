@@ -1,4 +1,4 @@
-baseurl = "http://www.example.com"
+baseurl = "https://gerblesh.github.io"
 title = "Gareth Widlansky"
 theme = "hugo-coder"
 languagecode = "en"
@@ -21,7 +21,7 @@ author = "Gareth Widlansky"
 info = "Game Developer, Student, and OSS Contributor"
 description = "Gareth Widlansky's Personal Website"
 keywords = "blog,developer,personal"
-avatarurl = "avatar.webp"
+avatarurl = "face.jpeg"
 #gravatar = "john.doe@example.com"
 
 faviconSVG = "avatar.webp"
@@ -34,6 +34,9 @@ enableTwemoji = true
 
 colorScheme = "dark"
 hidecolorschemetoggle = true
+
+customCSS = ["css/carousel.css"]
+customJS = ["js/carousel.js"]
 
 # customCSS = ["css/custom.css"]
 # customSCSS = ["scss/custom.scss"]

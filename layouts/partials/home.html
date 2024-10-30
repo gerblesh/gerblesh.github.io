@@ -1,0 +1,10 @@
+<section class="container centered">
+  <div class="about">
+    {{ partial "carousel.html" (dict "context" . "items" "1" "height" "70" "unit" "%" "duration" "7000") }}
+    {{ partialCached "home/author.html" . }}
+
+    {{ partialCached "home/social.html" . }}
+  </div>
+
+  {{ partialCached "home/extensions.html" . }}
+</section>
