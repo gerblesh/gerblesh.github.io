@@ -42,21 +42,23 @@ body {
 }
 
 .cursor {
-  content: "";
   width: 1px;
   height: var(--font-size);
   background: var(--foreground-color);
+  font-size: var(--font-size);
   display: inline-block;
-  /* transform: translateY(2px); */
-  animation: cursor-blink 1.0s steps(2) infinite;
+  transform: translateY(2px);
+  animation: cursor-blink 1s steps(2, start) infinite;
 }
 
 @keyframes cursor-blink {
   0% {
+    opacity: 1;
+  }
+  100% {
     opacity: 0;
   }
 }
-
 .prompt {
   background-color: transparent;
   color: var(--ansi-cyan);
@@ -186,7 +188,7 @@ summary::marker {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: clamp(35vh, 200px, 330px);
+  height: clamp(35vh, 250px, 330px);
   overflow: hidden;
 }
 
