@@ -55,7 +55,7 @@ Projects
     detail.addEventListener("toggle", function () {
       if (this.open) {
         // Scroll to the details element, aligning to top of the element
-        this.scrollIntoView({ behavior: "smooth", block: "middle" });
+        this.scrollIntoView({ behavior: "smooth", block: "start" });
         icon.classList.remove("fa-folder");
         icon.classList.add("fa-folder-open");
       } else {
