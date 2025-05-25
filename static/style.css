@@ -42,12 +42,12 @@ body {
 }
 
 .cursor {
-  width: 1px;
-  height: var(--font-size);
+  width: 0.08em;
+  height: 1em;
   background: var(--foreground-color);
   font-size: var(--font-size);
   display: inline-block;
-  transform: translateY(2px);
+  transform: translateY(0.1em);
   animation: cursor-blink 1s steps(2, start) infinite;
 }
 
