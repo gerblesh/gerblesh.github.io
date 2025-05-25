@@ -1,0 +1,69 @@
+<h2 id="projects-summary">
+Projects
+</h2>
+<p>
+<span class="prompt">~/Projects</span>
+<span class="cmd">ls -l</span>
+<span class="cursor"/>
+</p>
+<div class="projects" id="projects">
+  {{ range where .Site.RegularPages "Section" "projects" }}
+    {{ $stat := os.Stat .File.Path}}
+    <details>
+      <summary class="file-row">
+        <span class="perm">drwxr-xr-x@</span>
+        <span class="size">-</span>
+        <span class="owner">user</span>
+        <span class="date">{{ $stat.ModTime.Format "02 Jan 2006" }}</span>
+        <span class="filename">{{ .Title }}</span>
+        <i class="fa-solid fa-folder folder-icon"></i>
+      </summary>
+
+      <div class="project" id="project-{{ .File.BaseFileName }}">
+        <div>
+          {{ $dicts := slice }}
+          {{ range $img := .Params.images }}
+            {{ $dicts = $dicts | append (dict
+              "name" $img
+              "alt" ($img | replaceRE "\\..*" "" | humanize)
+            ) }}
+          {{ end }}
+
+          {{ partial "carousel.html" (dict
+            "id" .File.BaseFileName
+            "interval" 4000
+            "images" $dicts
+          ) }}
+        </div>
+        <hr class="dashed"/>
+        <div>
+          <p>
+            <span class="prompt">~/P/{{ .Title }}</span>
+            <span class="cmd">cat </span>
+            <span class="str">"index.md"</span>
+            <span class="cursor"> </span>
+          </p>
+          <p>{{ .Content }}</p>
+        </div>
+      </div>
+    </details>
+  {{ end }}
+</div>
+
+<script>
+  document.querySelectorAll("details").forEach((detail) => {
+    const icon = detail.querySelector(".file-row .folder-icon");
+    detail.addEventListener("toggle", function () {
+      if (this.open) {
+        // Scroll to the details element, aligning to top of the element
+        this.scrollIntoView({ behavior: "smooth", block: "start" });
+        icon.classList.remove("fa-folder");
+        icon.classList.add("fa-folder-open");
+      } else {
+        icon.classList.remove("fa-folder-open");
+        icon.classList.add("fa-folder");
+      }
+    });
+
+  });
+</script>

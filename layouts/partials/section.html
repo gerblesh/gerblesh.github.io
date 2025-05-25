@@ -1,0 +1,7 @@
+{{ $section := .Get 0 }}
+{{ with site.GetPage $section }}
+  <div class="card" id="{{ .File.TranslationBaseName }}">
+    <h2>{{ .Title }}</h2>
+    {{ .Content }}
+  </div>
+{{ end }}

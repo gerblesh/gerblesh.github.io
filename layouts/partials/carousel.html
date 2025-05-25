@@ -1,0 +1,76 @@
+{{- $id := .id | default "imgcat" -}}
+{{- $images := .images -}}
+{{- $interval := .interval | default 3000 -}}
+
+<div id="{{ $id }}-carousel" style="margin-top: 2rem;">
+  <p>
+    <span class="prompt">~</span>
+    <span class="cmd" id="{{ $id }}-cmd"></span><span class="cursor"></span>
+  </p>
+  <div class="img-container">
+    <img id="{{ $id }}-img" src="" alt="" class="img">
+  </div>
+</div>
+
+<script>
+(function () {
+  const images = {{ $images }};
+  const interval = {{ $interval }};
+
+  let index = 0;
+  const cmdElem = document.querySelector('#{{ $id }}-carousel #{{ $id }}-cmd');
+  const imgElem = document.querySelector('#{{ $id }}-carousel #{{ $id }}-img');
+
+  function typeCommand(command, callback, elem) {
+    elem.textContent = '';
+    let i = 0;
+    let strElem = null;
+    let strStart = -1;
+
+    const typing = setInterval(() => {
+      if (i >= command.length) {
+        clearInterval(typing);
+        callback();
+        return;
+      }
+      const char = command[i];
+      if (char === '"') {
+        if (strElem !== null) {
+          strElem.append(char);
+          i++;
+          strElem.className = "str";
+          strElem = null;
+          strStart = -1;
+          return;
+        }
+        strElem = document.createElement("span");
+        strElem.className = "str-err";
+        strStart = i;
+        cmdElem.appendChild(strElem);
+        strElem.append(char);
+        i++;
+        return;
+      }
+      if (strElem !== null) {
+        strElem.append(char);
+        i++;
+        return;
+      }
+      cmdElem.append(char);
+      i++;
+    }, 80);
+  }
+
+  function showNextImage() {
+    const img = images[index];
+    typeCommand(`imgcat "${img.name}"`, () => {
+      imgElem.src = '/images/' + img.name;
+      imgElem.alt = img.alt;
+      index = (index + 1) % images.length;
+      setTimeout(showNextImage, interval);
+    }, cmdElem);
+  }
+
+  window.addEventListener('DOMContentLoaded', showNextImage);
+})();
+</script>

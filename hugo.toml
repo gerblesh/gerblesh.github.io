@@ -1,0 +1,13 @@
+# baseURL = 'https://gerblesh.github.io/portfolio'
+baseURL = '/'
+languageCode = 'en-us'
+title = "Wid's Page"
+theme = ''
+
+[taxonomies]
+tag = ""
+category = ""
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
