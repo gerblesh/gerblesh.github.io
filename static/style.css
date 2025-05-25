@@ -29,6 +29,7 @@
 * {
   color: var(--foreground-color);
   font-family: 'IBM Plex Mono', monospace;
+  font-size: var(--font-size);
 }
 
 body {
@@ -36,11 +37,9 @@ body {
   font-size: var(--font-size);
 }
 
-
-/* body, h1, h2, h3, h4, h5, h6, pre, code { */
-  /* font-size: var(--font-size); */
-/* } */
-
+.title {
+  font-size: var(--font-size)
+}
 
 .cursor {
   content: "";
@@ -187,7 +186,7 @@ summary::marker {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: clamp(30vw, 200px, 340px);
+  height: clamp(35vh, 200px, 330px);
   overflow: hidden;
 }
 
