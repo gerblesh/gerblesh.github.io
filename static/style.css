@@ -104,8 +104,8 @@ a {
   height: auto;
   /* margin: 0 auto; */
   /* flex-wrap: wrap; */
-  border-top: 3px dashed var(--bright-black);
-  border-bottom: 3px dashed var(--bright-black);
+  border-top: 0.2rem solid var(--bright-black);
+  border-bottom: 0.2rem solid var(--bright-black);
 }
 
 .project.show {

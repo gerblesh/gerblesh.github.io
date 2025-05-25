@@ -35,7 +35,6 @@ Projects
             "images" $dicts
           ) }}
         </div>
-        <hr class="dashed"/>
         <div>
           <p>
             <span class="prompt">~/P/{{ .Title }}</span>
@@ -56,7 +55,7 @@ Projects
     detail.addEventListener("toggle", function () {
       if (this.open) {
         // Scroll to the details element, aligning to top of the element
-        this.scrollIntoView({ behavior: "smooth", block: "start" });
+        this.scrollIntoView({ behavior: "smooth", block: "middle" });
         icon.classList.remove("fa-folder");
         icon.classList.add("fa-folder-open");
       } else {
@@ -64,6 +63,5 @@ Projects
         icon.classList.add("fa-folder");
       }
     });
-
   });
 </script>
