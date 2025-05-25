@@ -187,7 +187,7 @@ summary::marker {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 20vh;
+  height: clamp(30vw, 200px, 340px);
   overflow: hidden;
 }
 
