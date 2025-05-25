@@ -6,3 +6,4 @@ title: "Wid's Page"
 {{< section "about" >}}
 {{< section "work" >}}
 {{< projects >}}
+{{< marquee >}}
