@@ -1,6 +1,48 @@
 <div class="title">
   <p>
     <span class="prompt">~/Gareth Widlansky</span>
-    <span class="cursor"></span>
+    <span class="cmd" id="title-cmd"></span><span class="cursor"/>
   </p>
 </div>
+
+<script>
+(function () {
+  const cmdElem = document.querySelector("#title-cmd");
+  const descs = ["OSS Contributor", "Game Developer", "Homelabber"];
+  let index = 0;
+
+  function deleteCmd(callback) {
+    const deleting = setInterval(() => {
+      const str = cmdElem.textContent;
+      if (str.length < 1) {
+        clearInterval(deleting);
+        callback();
+        return;
+      }
+      cmdElem.textContent = str.substring(0, str.length - 1);
+    }, 80);
+  }
+
+  function typeCmd(cmd) {
+    let i = 0;
+    const typing = setInterval(() => {
+      if (cmdElem.textContent.length >= cmd.length) {
+        clearInterval(typing);
+        setTimeout(showNextDesc, 1000);
+        return;
+      }
+      cmdElem.append(cmd[i]);
+      i++;
+    }, 80);
+  }
+
+  function showNextDesc() {
+    deleteCmd(() => {
+      typeCmd(descs[index]);
+      index = (index + 1) % descs.length;
+    });
+  }
+
+  window.addEventListener('DOMContentLoaded', showNextDesc);
+})();
+</script>

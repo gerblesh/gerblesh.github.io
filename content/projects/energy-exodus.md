@@ -1,9 +1,9 @@
 ---
 title: "Energy Exodus"
 images:
-  - "energy-green.png"
-  - "energy-red.png"
-  - "energy-demo.gif"
+  - "energy-green.webp"
+  - "energy-red.webp"
+  - "energy-demo.webp"
 ---
 
 Made for the 1-bit jam with friends from school collaborating on code, art, and music, Energy Exodus is an exciting 2D platformer requiring precise movement and timing to beat. Play as a tiny robot in search of an escape, and hide from the enemies that get in your way!
