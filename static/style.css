@@ -130,7 +130,7 @@ blockquote {
   /* gap: 1rem; */
   cursor: pointer;
   color: var(--ansi-cyan); /* cyan filename */
-  padding: 1rem 12px;
+  padding: 0.5rem 12px;
   margin-bottom: 4px;
   transition: all 0.2s;
 }
@@ -163,7 +163,7 @@ blockquote {
 .file-row:hover,
 details[open] summary.file-row
 {
-  background-color: var(--bright-white);
+  background-color: var(--ansi-cyan);
   color: var(--background-color)
 }
 

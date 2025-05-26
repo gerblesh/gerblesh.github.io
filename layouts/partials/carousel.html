@@ -67,6 +67,9 @@
       imgElem.src = '/images/' + img.name;
       imgElem.alt = img.alt;
       imgElem.classList.remove('hidden');
+      if (images.length === 1) {
+        return
+      }
       index = (index + 1) % images.length;
       setTimeout(showNextImage, interval);
     }, cmdElem);
