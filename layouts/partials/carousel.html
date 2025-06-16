@@ -1,10 +1,11 @@
-{{- $id := .id | default "imgcat" -}}
+{{- $id := .id | default "chafa" -}}
+{{- $pwd := .pwd | default "" -}}
 {{- $images := .images -}}
 {{- $interval := .interval | default 3000 -}}
 
 <div id="{{ $id }}-carousel" style="margin-top: 2rem;">
   <p>
-    <span class="prompt">~</span>
+    <span class="prompt">~{{ .pwd }}</span>
     <span class="cmd" id="{{ $id }}-cmd"></span><span class="cursor"></span>
   </p>
   <div class="img-container">
@@ -63,7 +64,7 @@
 
   function showNextImage() {
     const img = images[index];
-    typeCommand(`imgcat "${img.name}"`, () => {
+    typeCommand(`chafa "${img.name}"`, () => {
       imgElem.src = '/images/' + img.name;
       imgElem.alt = img.alt;
       imgElem.classList.remove('hidden');

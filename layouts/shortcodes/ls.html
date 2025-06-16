@@ -1,13 +1,16 @@
-<h2 id="projects-summary">
-Projects
+{{ $name := .Get 0 }}
+{{ $dir := .Get 1 }}
+{{ $firstLetter := substr $name 0 1 }}
+<h2 id="{{ $name }}-summary">
+{{ $name }}
 </h2>
 <p>
-<span class="prompt">~/Projects</span>
+<span class="prompt">~/{{ $name }}</span>
 <span class="cmd">ls -l</span>
 <span class="cursor"/>
 </p>
-<div class="projects" id="projects">
-  {{ range where .Site.RegularPages "Section" "projects" }}
+<div class="{{ $name }}" id="{{ $name }}">
+  {{ range where .Site.RegularPages "Section" $dir }}
     {{ $stat := os.Stat .File.Path}}
     <details>
       <summary class="file-row">
@@ -19,7 +22,7 @@ Projects
         <i class="fa-solid fa-folder folder-icon"></i>
       </summary>
 
-      <div class="project" id="project-{{ .File.BaseFileName }}">
+      <div class="info-card" id="info-{{ .File.BaseFileName }}">
         <div>
           {{ $dicts := slice }}
           {{ range $img := .Params.images }}
@@ -31,13 +34,14 @@ Projects
 
           {{ partial "carousel.html" (dict
             "id" .File.BaseFileName
+            "pwd" (printf "/%s/%s" $firstLetter .Title)
             "interval" 4000
             "images" $dicts
           ) }}
         </div>
         <div>
           <p>
-            <span class="prompt">~/P/{{ .Title }}</span>
+            <span class="prompt">~/{{ $firstLetter }}/{{ .Title }}</span>
             <span class="cmd">cat </span>
             <span class="str">"index.md"</span>
             <span class="cursor"> </span>
