@@ -5,7 +5,7 @@ title: "Tools"
 Golang, GDScript, C/C++, Bash, Fish, Python, Java, C#, Rust, Javascript, Markup (org, typst, md, html, etc)
 
 ### Tooling
-Linux, Systemd, Fish Shell, Podman/Docker, Distrobox, Hugo, Godot, Scratch, Vex/Pros
+Linux, Systemd, Podman/Docker, Hugo, Godot, Scratch, Vex/Pros, Vulkan, Raylib
 
 ### Dev Tools
-Helix Editor, Distrobox, Ghostty, Fedora Silverblue
+Helix Editor, Fish Shell, Distrobox/Containers, Ghostty, Fedora Silverblue
